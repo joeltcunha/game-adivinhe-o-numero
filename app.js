@@ -8,7 +8,7 @@
 let listaDeNumerosSorteados = [];
 
 // Cria número limite que pode ser sorteado
-let numeroLimite = 10;
+let numeroLimite = 100;
 
 // Armazena o número aleatório gerado pela função
 let numeroSecreto = gerarNumeroAleatorio();
@@ -24,7 +24,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirTextoInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100');
 
 }
 exibirTextoInicial();
@@ -59,7 +59,7 @@ function verificarChute() {
 // Se existir, sorteia outro e coloca no array
 // Caso contrário, coloca o mesmo no array
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = Math.floor(Math.random() * 10) + 1;
+    let numeroEscolhido = Math.floor(Math.random() * 100) + 1;
 
     // Verifica se a lista de números sorteados está cheia
     // Em caso positivo esvazia a lista
